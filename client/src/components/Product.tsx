@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "../styles/components/Product.module.css";
-import AddToCart from "./AddToCart";
-import ImageWithLoader from "./ImageWithLoader";
+import React from 'react';
+import styles from '../styles/components/Product.module.css';
+import AddToCart from './AddToCart';
+import ImageWithLoader from './ImageWithLoader';
 
 interface ProductProps {
   image: string;
@@ -11,13 +11,7 @@ interface ProductProps {
   description: string;
 }
 
-const Product: React.FC<ProductProps> = ({
-  image,
-  name,
-  amount,
-  id,
-  description,
-}) => {
+const Product: React.FC<ProductProps> = ({ image, name, amount, id, description }) => {
   return (
     <div className={styles.product}>
       <ImageWithLoader src={image} alt={name} classStyle={styles.image} />

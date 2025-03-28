@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import styles from "../../styles/components/layout/Navbar.module.css";
-import { useCart } from "../../contexts/CartContext";
-import { LINKS } from "../../constants/navbar_links";
-import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+import styles from '../../styles/components/layout/Navbar.module.css';
+import { useCart } from '../../contexts/CartContext';
+import { LINKS } from '../../constants/navbar_links';
+import { useEffect, useState } from 'react';
 
 const NavBar: React.FC = () => {
   const { getCartSize } = useCart();

@@ -1,6 +1,6 @@
-import Product from "../components/Product";
-import { Product as ProductType } from "../constants/products";
-import styles from "../styles/pages/Products.module.css";
+import Product from '../components/Product';
+import { Product as ProductType } from '../constants/products';
+import styles from '../styles/pages/Products.module.css';
 
 interface ProductsProps {
   products: ProductType[];

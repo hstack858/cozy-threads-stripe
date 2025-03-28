@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import NavBar from "./Navbar";
+import { Outlet } from 'react-router-dom';
+import NavBar from './Navbar';
 
 const Layout: React.FC = () => (
   <div>

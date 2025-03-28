@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 type CartItem = {
   id: string;
@@ -21,7 +21,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const useCart = (): CartContextType => {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error("useCart must be used within a CartProvider");
+    throw new Error('useCart must be used within a CartProvider');
   }
   return context;
 };
@@ -41,8 +41,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
                 amount: i.amount,
                 quantity: i.quantity + 1,
               }
-            : i
-        )
+            : i,
+        ),
       );
     } else {
       setCart((prevCart) => [
@@ -69,8 +69,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
                 amount: i.amount,
                 quantity: i.quantity - 1,
               }
-            : i
-        )
+            : i,
+        ),
       );
     } else {
       setCart((prevCart) => prevCart.filter((i) => i.id !== itemId));
@@ -85,19 +85,15 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     return (
       Math.round(
         cart.reduce(
-          (accumulator, cartItem) =>
-            accumulator + cartItem.amount * cartItem.quantity,
-          0
-        ) * 100
+          (accumulator, cartItem) => accumulator + cartItem.amount * cartItem.quantity,
+          0,
+        ) * 100,
       ) / 100
     );
   };
 
   const getCartSize = () => {
-    return cart.reduce(
-      (accumulator, cartItem) => accumulator + cartItem.quantity,
-      0
-    );
+    return cart.reduce((accumulator, cartItem) => accumulator + cartItem.quantity, 0);
   };
 
   return (

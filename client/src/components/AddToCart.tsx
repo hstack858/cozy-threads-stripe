@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { useCart } from "../contexts/CartContext";
-import styles from "../styles/components/AddToCart.module.css";
+import { useEffect, useState } from 'react';
+import { useCart } from '../contexts/CartContext';
+import styles from '../styles/components/AddToCart.module.css';
 
 interface AddToCartProps {
   id: string;
@@ -54,11 +54,7 @@ const AddToCart: React.FC<AddToCartProps> = ({ id, name, amount }) => {
           </span>
         )}
       </div>
-      <button
-        className={styles.cartButton}
-        onClick={incrementCart}
-        data-test="add-to-cart"
-      >
+      <button className={styles.cartButton} onClick={incrementCart} data-test="add-to-cart">
         <i className="fa-solid fa-plus"></i>
       </button>
     </div>

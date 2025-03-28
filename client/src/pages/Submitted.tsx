@@ -1,4 +1,4 @@
-import styles from "../styles/pages/Submitted.module.css";
+import styles from '../styles/pages/Submitted.module.css';
 
 const Submitted: React.FC = () => {
   return (

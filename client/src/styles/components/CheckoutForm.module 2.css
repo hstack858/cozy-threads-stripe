@@ -23,6 +23,6 @@
 }
 
 .payButton:disabled {
-  cursor: not-allowed;
   background-color: #5c4b43;
+  cursor: not-allowed;
 }
