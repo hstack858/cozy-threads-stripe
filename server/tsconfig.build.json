@@ -6,5 +6,8 @@
     "jest.setup.ts",
     "**/spec/**",
     "**/*.test.ts"
-  ]
+  ],
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"]
+  }
 }
