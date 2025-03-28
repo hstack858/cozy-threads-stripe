@@ -12,5 +12,5 @@
     "jsx": "react-jsx",
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src", "spec", "jest.setup.ts", "jest.config.ts"]
+  "include": ["src/**/*", "spec/**/*", "jest.setup.ts", "jest.config.ts"]
 }
