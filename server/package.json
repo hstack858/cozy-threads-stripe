@@ -20,7 +20,7 @@
   "author": "Henry Stachowiak",
   "license": "ISC",
   "description": "An Express.js application for an e-commerce platform",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
