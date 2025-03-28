@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "module": "CommonJS",
+    "target": "ESNext",
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "spec", "jest.setup.ts", "jest.config.ts"]
+}
