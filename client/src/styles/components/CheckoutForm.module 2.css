@@ -1,0 +1,28 @@
+.errorMessage {
+  font-weight: 600;
+  color: rgb(223 27 65);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.payButton {
+  display: block;
+  width: 10rem;
+  height: 2.5rem;
+  margin: auto;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  color: white;
+  background-color: #5c4b43;
+  margin-top: 2rem;
+}
+
+.payButton:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.payButton:disabled {
+  cursor: not-allowed;
+  background-color: #5c4b43;
+}
